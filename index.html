@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>极速街道赛车</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>极速街道赛车</h1>
+        <p>方向键或 A/D 控制左右移动，躲避来车并刷新你的最高分。</p>
+      </header>
+
+      <section class="game-shell">
+        <canvas id="game" width="480" height="640" aria-label="赛车游戏画布"></canvas>
+        <div class="hud">
+          <div>
+            <span class="label">速度</span>
+            <span id="speed">0</span>
+          </div>
+          <div>
+            <span class="label">得分</span>
+            <span id="score">0</span>
+          </div>
+          <div>
+            <span class="label">最高</span>
+            <span id="best">0</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="start">开始游戏</button>
+          <button id="pause">暂停</button>
+          <button id="restart">重新开始</button>
+        </div>
+        <div class="tips">
+          <p>提示：连续躲避会让速度逐渐提升，但也更容易失控。</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
